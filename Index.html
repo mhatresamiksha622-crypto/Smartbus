@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartBus - Seat Booking System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>🚌 SmartBus</h1>
+    <p>Intelligent Seat Availability &amp; Booking System</p>
+</header>
+
+<main class="container">
+
+    <section class="stats">
+        <div class="card">
+            <h2>Total Seats</h2>
+            <div class="number" id="total">8</div>
+        </div>
+
+        <div class="card">
+            <h2>Occupied</h2>
+            <div class="number" id="occupied">1</div>
+        </div>
+
+        <div class="card">
+            <h2>Available</h2>
+            <div class="number" id="available">7</div>
+        </div>
+    </section>
+
+    <h2 class="section-title">Bus Seat Layout</h2>
+
+    <section class="seats" id="seatLayout"></section>
+
+    <section class="controls">
+        <label for="seatSelect">Select Seat:</label>
+
+        <select id="seatSelect">
+            <option value="0">Seat 0</option>
+            <option value="1">Seat 1</option>
+            <option value="2">Seat 2</option>
+            <option value="3" selected>Seat 3</option>
+            <option value="4">Seat 4</option>
+            <option value="5">Seat 5</option>
+            <option value="6">Seat 6</option>
+            <option value="7">Seat 7</option>
+        </select>
+
+        <br>
+
+        <button class="action" id="bookBtn">Book Seat</button>
+        <button class="action" id="releaseBtn">Release Seat</button>
+        <button class="action" id="resetBtn">Reset</button>
+    </section>
+
+    <h2 class="section-title">Activity Log</h2>
+
+    <section class="log-box" id="activityLog" aria-live="polite">
+        <p>SmartBus system started successfully.</p>
+    </section>
+
+</main>
+
+<footer>
+    SmartBus Seat Booking System
+</footer>
+
+</body>
+</html>
